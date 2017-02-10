@@ -1,0 +1,28 @@
+.smallbanner {
+  color: white;
+  text-align: center;
+  height: 30vh;
+
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  background-image: url("smallbanner.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position : relative;
+  margin-bottom: 30px;
+}
+
+.smallbanner-content{
+  position: absolute;
+  left: 150px;
+}
+
+.smallbanner h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+

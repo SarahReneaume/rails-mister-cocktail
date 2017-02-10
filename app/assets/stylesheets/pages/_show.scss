@@ -1,0 +1,27 @@
+.ingredient-element{
+  font-family: "Raleway", "Helvetica", "sans-serif";
+  line-height: 30px;
+  color: white;
+}
+
+.instruction{
+  color:#87d0c7;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+
+.fa-check{
+color:white;
+}
+
+
+.ingredient-card{
+padding: 15px;
+margin-bottom:30px;
+background-color: #b94d55;
+box-shadow: 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.05);
+}
+
+.ingredient-card:hover{
+box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.15);
+}

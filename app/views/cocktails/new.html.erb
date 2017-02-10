@@ -1,5 +1,15 @@
-<p><%= link_to "Back to the cocktail list", cocktails_path %></p>
+<div class="smallbanner">
+  <div class="smallbanner-content">
+    <h1><%= @cocktail.name %></h1>
+  </div>
+</div>
 
-<h3>New cocktail</h3>
+<div class="container">
 
-<%= render 'form' %>
+<div class="form-link"><i class="fa fa-glass" aria-hidden="true"></i><%= link_to "    Back to the cocktail list", cocktails_path %></div>
+
+  <div class="second-container">
+    <h3>New cocktail</h3>
+    <%= render 'form' %>
+  </div>
+</div>

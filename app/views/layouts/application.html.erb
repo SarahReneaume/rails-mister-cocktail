@@ -3,22 +3,13 @@
 <head>
  <title>RailsMisterCocktail</title>
  <%= csrf_meta_tags %>
-
- <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
- <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+ <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body>
-
-<div class="banner">
-  <div class="banner-content">
-    <h1>Be fancy</h1>
-    <p>Find all the best cocktail recipes</p>
-    <div class= "btn-main"> <%=link_to "Create a new cocktail", new_cocktail_path%> </div>
-  </div>
-</div>
    <%= yield %>
 </body>
 </html>

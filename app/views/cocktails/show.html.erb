@@ -1,22 +1,28 @@
+<div class="smallbanner">
+  <div class="smallbanner-content">
+    <h1><%= @cocktail.name %></h1>
+  </div>
+</div>
+
 <div class="container">
-  <p><%= link_to "Back to the cocktail list", cocktails_path %></p>
+  <div><i <i class="fa fa-glass" aria-hidden="true"></i><%= link_to "     Back to the cocktail list", cocktails_path %></div>
+    <div class="second-container">
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-        <h1> <%= @cocktail.name %> </h1>
-        <hr>
-          <h4>Recipe:</h4>
-
-        <% @cocktail.doses.each do |dose| %>
-        <ul>
-        <li><%= dose.ingredient.name %> : <%= dose.description %> cl </li>
-        </ul>
-        <% end %>
+      <h4>Recipe:</h4>
+      <div><%= link_to new_cocktail_dose_path(@cocktail) do %>
+        <div class="ingredient-card">
+        <div class="instruction"> - Click on card to add ingredients - </div>
+          <% @cocktail.doses.each do |dose| %>
+            <div class="ingredient-element"> <i class="fa fa-check" aria-hidden="true"></i> <%= dose.description %>  of <%= dose.ingredient.name %> </div>
+            <% end %>
+        </div>
+      <% end %>
       </div>
     </div>
-  <div class="btn-main"><%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %></div>
-
 </div>
+
+
+
 
 
 

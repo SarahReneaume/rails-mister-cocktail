@@ -2,9 +2,10 @@
   color: white;
   text-align: center;
   height: 100vh;
+
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
-  background-image: url("home.jpeg");
+  background-image: url("home5.jpeg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,16 +18,36 @@
 }
 
 .banner h1 {
-  font-size: 60px;
+  font-size: 45px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .banner p {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: lighter;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;
 }
 
+#btn-banner{
+  line-height: 40px;
+  background-color: #FDB556;
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.05);
+}
+
+#btn-banner:hover{
+  background-color:#ffa126;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.15);
+}
+
+#btn-banner a {
+  color: white;
+}
+
+#btn-banner a:hover {
+  text-decoration: none;
+}
 

@@ -12,5 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+$(".banner").click(function() {
+   $('html,body').animate({
+       scrollTop: $(".container").offset().top},
+       'slow');
+ });

@@ -13,3 +13,29 @@
 @import "components/index";
 @import "pages/index";
 @import "vendor/index";
+
+
+
+
+
+.btn-main{
+  border-radius: 4px;
+  line-height: 40px;
+  background-color: #38556A;
+  color: white;
+  font-size: 14px;
+}
+
+.btn-main:hover {
+  color: white;
+  box-shadow: 1px 1px 0 1px;
+}
+
+.btn-main a {
+  color: white;
+}
+
+.btn-main a:hover {
+  color: white;
+  text-decoration: none;
+}
